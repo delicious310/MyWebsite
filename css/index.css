@@ -1,0 +1,289 @@
+/*******header开始*******/
+#header{
+    margin-top:2rem;
+    height: 75px;
+}
+#header-nav{
+    float: right;
+    /*position:absolute;*/
+    /*top:50%;*/
+    /*right:0;*/
+    /*-webkit-transform:translateY(-50%);*/
+    /*-moz-transform:translateY(-50%);*/
+    /*-ms-transform:translateY(-50%);*/
+    /*-o-transform:translateY(-50%);*/
+    /*transform:translateY(-50%);*/
+    /*margin-right:20px;*/
+}
+#header-nav li{
+    float: left;
+
+}
+#header-nav li a{
+    color: #3a494c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1,5rem;
+    padding:1rem 2.5rem;
+}
+#header-nav li a:before{
+    content:'[';
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform:translateX(20px) ;
+    -o-transform:translateX(20px) ;
+    transform: translateX(20px);
+    -webkit-transition: transform 0.2s ease-in;
+    -moz-transition: transform 0.2s ease-in;
+    -ms-transition: transform 0.2s ease-in;
+    -o-transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+}
+#header-nav li a:after{
+    content:']';
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform:translateX(-20px) ;
+    -o-transform:translateX(-20px) ;
+    transform: translateX(-20px);
+    -webkit-transition: transform 0.2s ease-in;
+    -moz-transition: transform 0.2s ease-in;
+    -ms-transition: transform 0.2s ease-in;
+    -o-transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+}
+#header-nav li:hover a:before{
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+    opacity:1;
+}
+#header-nav li:hover a:after{
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+    opacity:1;
+
+}
+#header-nav .search{
+    width:30px;
+}
+#header-menu{
+    width:100%;
+    height:30px;
+    position:absolute;
+    right:0;
+    top:50%;
+    margin-top:-15px;
+}
+#search-box{
+    height:28px;
+    position:relative;
+    width:100%;
+    float: right;
+    /*right:0;*/
+    /*top:50%;*/
+    /*-webkit-transform:translateY(-50%);*/
+    /*-moz-transform:translateY(-50%);*/
+    /*-ms-transform:translateY(-50%);*/
+    /*-o-transform:translateY(-50%);*/
+    /*transform:translateY(-50%);*/
+    z-index:9;
+}
+#search-input{
+    position:absolute;
+    top:0;
+    right:30px;
+    border:none;
+    outline:none;
+    background: #279f7c;
+    width:60%;
+    height:25px;
+    margin:0;
+    z-index:10;
+    padding:0 10px;
+    font-size:13px;
+    color:#ffffff;
+    display: none;
+}
+#search-btn{
+    background: url('../img/search.png') no-repeat 0 -4px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    color:transparent;
+    border:none;
+    outline:none;
+    width: 30px;
+    height: 25px;
+    display: block;
+    position:absolute;
+    right:0;
+    top:0;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+#header-menu .btn{
+    font-size:20px;
+    color:#fff;
+    background:#000;
+    /*float: right;*/
+    position:absolute;
+    right:20px;
+    margin-right:20px;
+    padding:5px;
+    display: none;
+}
+/*******header结束*******/
+/*******work开始*******/
+#works{
+}
+#works h3{
+    float:left;
+    color:#a2a3a3;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size:2rem;
+}
+#works .work-top{
+    overflow: hidden;
+    padding-top:50px;
+
+}
+#works .blog-cate{
+    float: right;
+}
+#works .blog-cate li{
+    float: left;
+    margin-right:20px;
+}
+#works .blog-cate a{
+    color: #279f7c;
+    border-radius:5px;
+    padding:8px 15px;
+    text-decoration: none;
+    font-size:1.1rem;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+#works .blog-cate a.active{
+    background: #279f7c;
+    border-radius: 5px;
+    color:#fff;
+}
+#works .blog-cate a:hover{
+    background: #279f7c;
+    color:#fff;
+    border-radius: 5px;
+}
+#works .blog{
+    float: left;
+    margin-right:68px;
+    margin-top:20px;
+    position: relative;
+    overflow:hidden;
+}
+#works .blog img{
+    width: 330px;
+    height: 241px;
+}
+#works .mask h4{
+    font-size: 35px;
+    margin-bottom:10px;
+    color:#fff;
+    padding-top:80px;
+}
+#works .mask-btn{
+    background: #000;
+    color:#fff;
+    font-size:20px;
+    padding:6px 20px;
+    border-radius: 5px;
+}
+#works .blog:nth-child(3n){
+    margin-right:0;
+}
+#works .blog .blog-title{
+    float: left;
+}
+#works .blog .blog-click{
+    float: right;
+}
+#works .blog-desc{
+    overflow: hidden;
+}
+#works .mask{
+    width: 330px;
+    height: 241px;
+    position:absolute;
+    top:0;
+    /*left:-330px;*/
+    transform:translateX(-100%);
+    background: rgba(39,159,124,0.6);
+    text-align: center;
+    transition:all 0.5s ease-in;
+}
+#works .blog:hover .mask{
+    transform:translateX(0);
+}
+/*******work结束*******/
+
+
+@media(max-width:480px){
+    .wrapper{
+        width:100%;
+    }
+    #header-nav{
+        background: #000;
+        width:100%;
+        position:absolute;
+        right:0;
+        top:30px;
+        display: none;
+    }
+    #header-menu .btn-hide{
+        display: none;
+    }
+    #header-menu .btn-show{
+        display: block;
+    }
+    #header-nav li{
+        float:none;
+        padding:10px;
+    }
+    #header-nav .search{
+        width:100%;
+    }
+    #search-box{
+        width:100%;
+    }
+    #search-input{
+        display: block;
+        left:2.5rem;
+    }
+    #search-btn{
+        left:75%;
+    }
+    #header-menu:target .header-nav{
+        display: block;
+    }
+    #header-menu:target .btn-show{
+        display: none;
+    }
+    #header-menu:target .btn-hide{
+        display: block;
+    }
+    #header-nav:target{
+        display: none;
+    }
+}
